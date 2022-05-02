@@ -1,38 +1,21 @@
-import 'package:flutter_assessment_app/models/response/app_response.dart';
-import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/request/request.dart';
+import 'dart:developer';
+
+import 'package:flutter_assessment_app/api/rest_client.dart';
 import '../constants/api_end_points.dart';
-import '../constants/constants.dart';
-export 'package:flutter_assessment_app/constants/extension.dart';
+import '../models/response/app_response.dart';
 
-
-class ApiClient extends GetConnect {
-  @override
-  void onInit() {
-
-    super.onInit();
-    httpClient.baseUrl = Constants.baseUrl;
-    httpClient.addRequestModifier((Request request) {
-      print(request.method.toUpperCase() + " " + request.url.toString());
-      print(request.headers);
-      return request;
+class ApiClient {
+  Future<AppResponse?> getList() async {
+    return RestClient().get(url: ApiEndPoints.fetchData).then(
+        (dynamic response) {
+      try {
+        if (response != null) return AppResponse.fromJson(response);
+      } catch (e) {
+        log(e.toString());
+      }
+      return null;
+    }, onError: (dynamic error) {
+      throw error;
     });
-
-    httpClient.addResponseModifier(
-      (request, response) {
-        print(response.headers);
-      },
-    );
   }
-
-  // GET APP RESPONSE LIST
-  Future<Response<AppResponse>> getList() =>
-      get(ApiEndPoints.fetchData, query: {}, decoder: (v) {
-        print(v);
-        return AppResponse.fromJson(v);
-      });
-
-
-
-
 }

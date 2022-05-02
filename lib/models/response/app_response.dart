@@ -1,45 +1,43 @@
+
+import 'dart:convert';
+
+AppResponse appResponseFromJson(String str) => AppResponse.fromJson(json.decode(str));
+
+
 class AppResponse {
-  String? title;
-  List<Rows> rows =[];
+  AppResponse({
+    required this.title,
+    required this.rows,
+  });
 
-  AppResponse({this.title, required this.rows});
+  final String? title;
+  final List<DataList>? rows;
 
-  AppResponse.fromJson(Map<String, dynamic> json) {
-    title = json['title'];
-    if (json['rows'] != null) {
-      rows = <Rows>[];
-      json['rows'].forEach((v) {
-        rows.add(Rows.fromJson(v));
-      });
-    }
-  }
+  factory AppResponse.fromJson(Map<String, dynamic> json) => AppResponse(
+    title: json["title"],
+    rows:
+    json["rows"] == null ? null : List<DataList>.from(json["rows"].map((x) => DataList.fromJson(x))),
+  );
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['title'] = title;
-    data['rows'] = rows.map((v) => v.toJson()).toList();
-    return data;
-  }
+
 }
 
-class Rows {
-  String? title;
-  String? description;
-  String? imageHref;
+class DataList {
+  DataList({
+    required this.title,
+    required this.description,
+    required this.imageHref,
+  });
 
-  Rows({this.title, this.description, this.imageHref});
+  final String? title;
+  final String? description;
+  final String? imageHref;
 
-  Rows.fromJson(Map<String, dynamic> json) {
-    title = json['title'];
-    description = json['description'];
-    imageHref = json['imageHref'];
-  }
+  factory DataList.fromJson(Map<String, dynamic> json) => DataList(
+    title: json["title"],
+    description: json["description"],
+    imageHref: json["imageHref"],
+  );
 
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['title'] = title;
-    data['description'] = description;
-    data['imageHref'] =imageHref;
-    return data;
-  }
+
 }

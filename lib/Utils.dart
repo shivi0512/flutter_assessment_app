@@ -24,15 +24,15 @@ class Utils {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
-                margin: EdgeInsets.all(20),
+                padding: const EdgeInsets.fromLTRB(20, 20, 20, 10),
+                margin: const EdgeInsets.all(20),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       message,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: Colors.black,
                           fontSize: 20,
                           fontFamily: "Montserrat-Medium"
@@ -40,10 +40,10 @@ class Utils {
                     ),
                     Row(
                       children: [
-                        Spacer(),
+                        const Spacer(),
                         TextButton(
                           onPressed: onTap,
-                          child: Text(
+                          child: const Text(
                             "Ok",
                             style: TextStyle(
                                 color: Colors.black,
