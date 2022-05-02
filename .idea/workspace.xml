@@ -1,12 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c4ccc42-e1a7-4426-b09c-979d73352bcb" name="Default Changelist" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/lib/Utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/api/api_client.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/api/response_helper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/constants/api_end_points.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/constants/app_strings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/constants/constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/constants/extension.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/response/app_errors.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/response/app_response.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/routes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="28blVvv0H4S7Jz8Ck8sK0nGJJwr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/constants" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/constants" />
+      <recent name="$PROJECT_DIR$/lib/api" />
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/lib/models/response" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c4ccc42-e1a7-4426-b09c-979d73352bcb" name="Default Changelist" comment="" />
+      <created>1651493192204</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651493192204</updated>
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1651493306917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651493306917</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="138" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1651497135867">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state x="138" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.958@0.25.1920.958" timestamp="1651497135867" />
+    <state x="115" y="125" width="1117" height="758" key="AVDManager" timestamp="1651497566010">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state x="115" y="125" width="1117" height="758" key="AVDManager/0.25.1920.958@0.25.1920.958" timestamp="1651497566010" />
+    <state width="1275" height="165" key="GridCell.Tab.0.bottom" timestamp="1651497601438">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state width="1275" height="165" key="GridCell.Tab.0.bottom/0.25.1920.958@0.25.1920.958" timestamp="1651497601438" />
+    <state width="1275" height="165" key="GridCell.Tab.0.center" timestamp="1651497601437">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state width="1275" height="165" key="GridCell.Tab.0.center/0.25.1920.958@0.25.1920.958" timestamp="1651497601437" />
+    <state width="1275" height="165" key="GridCell.Tab.0.left" timestamp="1651497601436">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state width="1275" height="165" key="GridCell.Tab.0.left/0.25.1920.958@0.25.1920.958" timestamp="1651497601436" />
+    <state width="1275" height="165" key="GridCell.Tab.0.right" timestamp="1651497601437">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state width="1275" height="165" key="GridCell.Tab.0.right/0.25.1920.958@0.25.1920.958" timestamp="1651497601437" />
+    <state x="175" y="140" key="SettingsEditor" timestamp="1651497166179">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state x="175" y="140" key="SettingsEditor/0.25.1920.958@0.25.1920.958" timestamp="1651497166179" />
+    <state x="273" y="241" key="Vcs.Push.Dialog.v2" timestamp="1651494473324">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state x="273" y="241" key="Vcs.Push.Dialog.v2/0.25.1920.958@0.25.1920.958" timestamp="1651494473324" />
+    <state x="456" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1651493378817">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state x="456" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.958@0.25.1920.958" timestamp="1651493378817" />
+    <state x="412" y="397" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1651494445132">
+      <screen x="0" y="25" width="1920" height="958" />
+    </state>
+    <state x="412" y="397" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1920.958@0.25.1920.958" timestamp="1651494445132" />
   </component>
 </project>
