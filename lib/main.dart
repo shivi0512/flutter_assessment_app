@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assessment_app/UI/dashboard/dashboard_controller.dart';
 import 'package:flutter_assessment_app/UI/dashboard/dashboard_screen.dart';
+import 'package:flutter_assessment_app/UI/search/search_screen.dart';
 import 'package:flutter_assessment_app/routes.dart';
 import 'package:get/get.dart';
 import 'UI/onboarding/splash_screen/splash_controller.dart';
@@ -42,6 +43,10 @@ class MyApp extends StatelessWidget {
                   () => DashboardController(),
             ),
           ),
+          GetPage(
+            name: Routes.searchScreen,
+            page: () => const SearchScreen(),
+            ),
         ]);
   }
 }
