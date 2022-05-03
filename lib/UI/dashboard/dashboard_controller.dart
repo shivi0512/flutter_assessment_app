@@ -7,16 +7,17 @@ import '../../routes.dart';
 class DashboardController extends GetxController {
   final ApiClient _apiClient = Get.find<ApiClient>();
   RxList<DataList> dataList = RxList<DataList>([]);
-RxString title = "".obs;
+  RxString title = "".obs;
+
   // ignore: prefer_typing_uninitialized_variables
   var scaffoldKey;
 
-
   @override
   void onInit() {
- scaffoldKey = GlobalKey<ScaffoldState>();
-     super.onInit();
+    scaffoldKey = GlobalKey<ScaffoldState>();
+    super.onInit();
   }
+
   @override
   void onReady() {
     super.onReady();
@@ -40,8 +41,8 @@ RxString title = "".obs;
   }
 
   void pullRefreshed() {
-   getList();
-   scaffoldKey.currentState.showSnackBar(
+    getList();
+    scaffoldKey.currentState.showSnackBar(
       const SnackBar(
         content: Text('Page Refreshed'),
       ),
@@ -49,7 +50,8 @@ RxString title = "".obs;
   }
 
   void onclick() {
-    Get.toNamed(Routes.searchScreen);
+    Get.toNamed(Routes.searchScreen, arguments: {
+      "data_list": dataList,
+    });
   }
-
 }

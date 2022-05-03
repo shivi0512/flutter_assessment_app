@@ -13,10 +13,6 @@ class IntroSliderController extends GetxController {
     pageController = PageController(initialPage: 0);
   }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
 
   gotoNextPage() {
     if (currentPage.value == 0 ||

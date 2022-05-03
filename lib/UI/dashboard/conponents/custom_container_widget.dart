@@ -31,7 +31,7 @@ class CustomContainerWidget extends StatelessWidget {
         children: [
           //Loads the images lazily
           CachedNetworkImage(
-            imageUrl: row.imageHref ?? "",
+            imageUrl: row.imageHref ?? "https://static.thenounproject.com/png/3674270-200.png",
             placeholder: (context, url) =>
                 const CircularProgressIndicator(),
             errorWidget: (context, url, error) =>
