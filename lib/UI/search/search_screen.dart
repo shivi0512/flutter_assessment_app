@@ -9,8 +9,9 @@ class SearchScreen extends StatefulWidget {
 
 class _SearchScreenState extends State<SearchScreen> {
   Icon customIcon = const Icon(Icons.search);
-  Widget customSearchBar = const Text('My Personal Journal');
+  Widget customSearchBar = const Text('Search Here');
   TextEditingController search = TextEditingController();
+  ValueNotifier<int> buttonClickedTimes =ValueNotifier(0);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     );
                   } else {
                     customIcon = const Icon(Icons.search);
-                    customSearchBar = const Text('My Personal Journal');
+                    customSearchBar = const Text('Search here');
                   }
                 });
               },

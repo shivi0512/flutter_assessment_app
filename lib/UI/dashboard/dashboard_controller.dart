@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_assessment_app/models/response/app_response.dart';
 import 'package:get/get.dart';
 import '../../../api/api_client.dart';
+import '../../routes.dart';
 
 class DashboardController extends GetxController {
   final ApiClient _apiClient = Get.find<ApiClient>();
@@ -37,8 +38,18 @@ RxString title = "".obs;
       dataList.addAll(appResponse?.rows ?? []);
     });
   }
-  Future<void> pullRefresh() async {
-    getList();
+
+  void pullRefreshed() {
+   getList();
+   scaffoldKey.currentState.showSnackBar(
+      const SnackBar(
+        content: Text('Page Refreshed'),
+      ),
+    );
+  }
+
+  void onclick() {
+    Get.toNamed(Routes.searchScreen);
   }
 
 }

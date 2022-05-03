@@ -18,7 +18,7 @@ class SplashController extends GetxController {
   }
 
   void navigationPage() {
-    Get.offNamed(Routes.dashboard);
+    Get.offNamed(Routes.introScreen);
   }
 
 }

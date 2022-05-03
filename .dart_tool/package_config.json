@@ -260,6 +260,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "smooth_page_indicator",
+      "rootUri": "file:///Users/shivangirastogi/.pub-cache/hosted/pub.dartlang.org/smooth_page_indicator-1.0.0+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///Users/shivangirastogi/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.1",
       "packageUri": "lib/",
@@ -350,7 +356,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-05-02T17:51:28.462284Z",
+  "generated": "2022-05-03T09:54:22.628498Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assessment_app/UI/dashboard/dashboard_controller.dart';
 import 'package:flutter_assessment_app/UI/dashboard/dashboard_screen.dart';
+import 'package:flutter_assessment_app/UI/onboarding/intro_slider_view/intro_slider_controller.dart';
+import 'package:flutter_assessment_app/UI/onboarding/intro_slider_view/intro_slider_screen.dart';
 import 'package:flutter_assessment_app/UI/search/search_screen.dart';
 import 'package:flutter_assessment_app/routes.dart';
 import 'package:get/get.dart';
@@ -41,6 +43,13 @@ class MyApp extends StatelessWidget {
             page: () => const DashboardScreen(),
             binding: BindingsBuilder.put(
                   () => DashboardController(),
+            ),
+          ),
+          GetPage(
+            name: Routes.introScreen,
+            page: () => const IntroSliderScreen(),
+            binding: BindingsBuilder.put(
+                  () => IntroSliderController(),
             ),
           ),
           GetPage(
